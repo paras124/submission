@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>form</title>
+<style>
+  .field{
+    width: 100%;
+  }
+.table1{
+	height:30%;
+	width:50%;
+	background-color:#CCC;
+	margin-top:10px;
+}
+  .body{
+    background-color: #00FFFF;
+  }
+.submitbtn{
+	background-color:#F00;
+    width: 100%;
+}
+
+</style>
+</head>
+
+<body class="body">
+
+<form action="Form_sub.php" method="post" enctype="multipart/form-data">
+<table class="table1" align="center">
+<tr>
+  <td><b><center>Enter Details</center></b></td>
+</tr>
+<tr>
+<td><input type="text" class="field" placeholder="Enter Order" /></td>
+</tr>
+<tr>
+<td><input type="text" class="field" placeholder="Enter Account" /></td>
+</tr>
+<tr>
+ <td><input type="text" placeholder="Enter delivery Date" onfocus="(this.type='date')" onblur="(this.type='text')") ></td>
+</tr>
+<tr>
+<td><input type="submit" class="submitbtn" name="submit"/></td>
+</tr> 
+</table>
+</form> 
+</body>
+</html>
