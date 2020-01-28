@@ -3,27 +3,35 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>form</title>
 <style>
-  .field{
-    width: 100%;
+ .field{
+    width: 80%;
+	margin-left:10%;
+	text-align:center;
+  }
+  .field1{
+	  width:30%;
+	  margin-left:auto;
+	  text-align:center;
+	  margin-left:33%;
   }
 .table1{
-	height:30%;
+	height:40%;
 	width:50%;
-	background-color:#CCC;
+	background-color: #CCC;
 	margin-top:10px;
+	border:#00F;
+	border-color: #F00;
+	margin-top:2%;
 }
-  .body{
-    background-color: #00FFFF;
-  }
 .submitbtn{
 	background-color:#F00;
     width: 100%;
+	height:110%;
 }
-
 </style>
 </head>
 
-<body class="body">
+<body background="https://images.unsplash.com/photo-1446694292248-2c2a7e575b1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80g">
 
 <form action="Form_sub.php" method="post" enctype="multipart/form-data">
 <table class="table1" align="center">
@@ -37,7 +45,7 @@
 <td><input type="text" class="field" placeholder="Enter Account" /></td>
 </tr>
 <tr>
- <td><input type="text" placeholder="Enter delivery Date" onfocus="(this.type='date')" onblur="(this.type='text')") ></td>
+ <td><input type="text" class="field1" placeholder="Enter delivery Date" onfocus="(this.type='date')" onblur="(this.type='text')") ></td>
 </tr>
 <tr>
 <td><input type="submit" class="submitbtn" name="submit"/></td>
